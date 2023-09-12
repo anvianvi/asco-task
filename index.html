@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie front-end (ASCO)</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+
+<style>
+  :root {
+    color: #8190A4;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+
+  .content-wrapper {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  header {
+    background: #C7D2DF;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #8190A4;
+  }
+
+  .header-wrapper {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    background: #8190A4;
+    color: #fff;
+    padding: 7px 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-right: 25px;
+  }
+
+  header nav {
+    display: flex;
+    font-weight: 600;
+  }
+
+  @media screen and (width<730px) {
+    header nav {
+      display: none
+    }
+
+    aside {
+      display: none;
+    }
+
+    .footer-logo {
+      display: none;
+    }
+
+  }
+
+  header nav li a {
+    padding: 17px 25px;
+  }
+
+  .nav-active {
+    background: #E5E9F2
+  }
+
+  .header-cart-btn {
+    font-size: 14px;
+    margin-left: auto;
+    color: #fff;
+    background: #47525E;
+    cursor: pointer;
+    outline: 0;
+    font-weight: 500;
+    padding: 8px 25px;
+    border: 0;
+    border-radius: 7px;
+  }
+
+
+  .main-wrapper {
+    display: flex;
+    gap: 5vw;
+    padding: 25px 0;
+  }
+
+  aside {
+    background-color: #C7D2DF;
+    width: 30vw;
+    max-width: 260px;
+    min-width: 200px;
+    border-radius: 7px;
+  }
+
+  h1,
+  h2 {
+    color: #47525E;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card-img {
+    height: 170px;
+    background-color: #E5E9F2;
+  }
+
+  .card p {
+    line-height: 1.5;
+  }
+
+  card h2 {
+    margin-left: 3px;
+  }
+
+  footer {
+    background-color: #47525E;
+    padding: 60px 0 90px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    background: #8190A4;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 60px;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav li {
+    margin: 0 0 15px;
+  }
+
+  .contact-us-bloc {
+    margin-left: auto;
+  }
+
+  @media screen and (width<1000px) {
+    .contact-us-bloc {
+      margin: 0;
+      min-width: 370px;
+    }
+
+  }
+  @media screen and (width<500px) {
+    .footer-form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 20px;
+    }
+    .contact-us-bloc {
+      margin: 0;
+      min-width: 200px;
+    }
+    .footer-wrapper{
+      justify-content: center;
+    }
+
+  }
+
+  .footer-form-lable {
+    display: block;
+    color: #fff;
+    margin: 0 0 10px;
+  }
+
+  .footer-form-email-input {
+    outline: 0;
+    width: 230px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 0 20px;
+    color: #646D77;
+  }
+
+  .footer-form-subscribe-btn {
+    color: #646D77;
+    background: #fff;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 20px;
+  }
+</style>
+
+<body>
+
+  <body>
+
+    <header>
+      <div class="content-wrapper header-wrapper">
+        <a href="./index.html" class="logo">Logo</a>
+
+        <nav>
+          <li><a href="#" class="nav-active">Start</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+        </nav>
+
+        <button class="btn header-cart-btn">Cart <span>(1)</span></button>
+
+      </div>
+
+    </header>
+
+    <div class="content-wrapper main-wrapper">
+      <aside class="aside"></aside>
+      <main class="main">
+        <h1>Title 1</h1>
+        <section class="cards-container">
+          <div class="card">
+            <div class="card-img"></div>
+            <h2>Lorem ipsum dolor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nujla vestibulum mauris ut diam vulputate, nec
+              scelerisque magna maximus. Suspendisse sit amer ex</p>
+          </div>
+          <div class="card">
+            <div class="card-img"></div>
+            <h2>Lorem ipsum dolor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nujla vestibulum mauris ut diam vulputate, nec
+              scelerisque magna maximus. Suspendisse sit amer ex</p>
+
+          </div>
+          <div class="card">
+            <div class="card-img"></div>
+            <h2>Lorem ipsum dolor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nujla vestibulum mauris ut diam vulputate, nec
+              scelerisque magna maximus. Suspendisse sit amer ex</p>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="content-wrapper footer-wrapper">
+        <a href="./index.html" class="footer-logo"></a>
+
+        <div class="footer-nav">
+          <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact us</a></li>
+          </nav>
+          <nav>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">T & Cs</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Community</a></li>
+          </nav>
+        </div>
+
+        <div class="contact-us-bloc">
+
+          <form action="#" class="footer-form">
+            <label for="subscribe-email" class="footer-form-lable">Get our newsletter</label>
+            <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Enter your email"
+              class="footer-form-email-input">
+            <input type="submit" value="Subscribe" class="footer-form-subscribe-btn">
+          </form>
+
+          <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg height="20" viewBox="0 0 72 72" width="20">
+                <g fill="none" fill-rule="evenodd">
+                  <rect fill="#fff" height="72" rx="8" width="72" />
+                  <path
+                    d="M60.4641463,13.4173171 L60.4641463,22.7278049 L54.9382927,22.7421951 C50.6068293,22.7421951 49.7721951,24.8 49.7721951,27.807561 L49.7721951,34.4702439 L60.09,34.4702439 L58.7517073,44.8887805 L49.7721951,44.8887805 L49.7721951,72 L39.0097317,72 L39.0097317,44.8887805 L30,44.8887805 L30,34.4702439 L39.0097317,34.4702439 L39.0097317,26.7858537 C39.0097317,17.8639024 44.4478049,13 52.42,13 C56.2204634,13 59.5,13.2878049 60.4641463,13.4173171 Z"
+                    fill="#47525E" />
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/pavel_anvi/" target="_blank">
+              <svg height=20 width=20 viewBox="0 0 600 600">
+                <g transform="matrix(1.01619,0,0,1.01619,44,43.8384)">
+                  <path
+                    d="M251.921,0.159C183.503,0.159 174.924,0.449 148.054,1.675C121.24,2.899 102.927,7.157 86.902,13.385C70.336,19.823 56.287,28.437 42.282,42.442C28.277,56.447 19.663,70.496 13.225,87.062C6.997,103.086 2.739,121.399 1.515,148.213C0.289,175.083 0,183.662 0,252.08C0,320.497 0.289,329.076 1.515,355.946C2.739,382.76 6.997,401.073 13.225,417.097C19.663,433.663 28.277,447.712 42.282,461.718C56.287,475.723 70.336,484.337 86.902,490.775C102.927,497.002 121.24,501.261 148.054,502.484C174.924,503.71 183.503,504 251.921,504C320.338,504 328.917,503.71 355.787,502.484C382.601,501.261 400.914,497.002 416.938,490.775C433.504,484.337 447.553,475.723 461.559,461.718C475.564,447.712 484.178,433.663 490.616,417.097C496.843,401.073 501.102,382.76 502.325,355.946C503.551,329.076 503.841,320.497 503.841,252.08C503.841,183.662 503.551,175.083 502.325,148.213C501.102,121.399 496.843,103.086 490.616,87.062C484.178,70.496 475.564,56.447 461.559,42.442C447.553,28.437 433.504,19.823 416.938,13.385C400.914,7.157 382.601,2.899 355.787,1.675C328.917,0.449 320.338,0.159 251.921,0.159ZM251.921,45.551C319.186,45.551 327.154,45.807 353.718,47.019C378.28,48.14 391.619,52.244 400.496,55.693C412.255,60.263 420.647,65.723 429.462,74.538C438.278,83.353 443.737,91.746 448.307,103.504C451.757,112.381 455.861,125.72 456.981,150.282C458.193,176.846 458.45,184.814 458.45,252.08C458.45,319.345 458.193,327.313 456.981,353.877C455.861,378.439 451.757,391.778 448.307,400.655C443.737,412.414 438.278,420.806 429.462,429.621C420.647,438.437 412.255,443.896 400.496,448.466C391.619,451.916 378.28,456.02 353.718,457.14C327.158,458.352 319.191,458.609 251.921,458.609C184.65,458.609 176.684,458.352 150.123,457.14C125.561,456.02 112.222,451.916 103.345,448.466C91.586,443.896 83.194,438.437 74.378,429.621C65.563,420.806 60.103,412.414 55.534,400.655C52.084,391.778 47.98,378.439 46.859,353.877C45.647,327.313 45.391,319.345 45.391,252.08C45.391,184.814 45.647,176.846 46.859,150.282C47.98,125.72 52.084,112.381 55.534,103.504C60.103,91.746 65.563,83.353 74.378,74.538C83.194,65.723 91.586,60.263 103.345,55.693C112.222,52.244 125.561,48.14 150.123,47.019C176.687,45.807 184.655,45.551 251.921,45.551Z"
+                    style="fill:#fff;fill-rule:nonzero;" />
+                  <path
+                    d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z"
+                    style="fill:#fff;fill-rule:nonzero;" />
+                  <path
+                    d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z"
+                    style="fill:#fff;fill-rule:nonzero;" />
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.snapchat.com/" target="_blank">
+              <svg height=20 width=20 enable-background="new 0 0 128 128" viewBox="0 0 128 128">
+                <g>
+                  <g>
+                    <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
+                    <path clip-rule="evenodd"
+                      d="M65.231,4h-0.006c-0.11,0-0.214,0-0.313,0.001    c-0.788,0.008-2.084,0.021-2.2,0.022c-2.841,0-8.527,0.4-14.634,3.088c-3.492,1.536-6.632,3.612-9.335,6.172    c-3.222,3.05-5.846,6.81-7.799,11.178c-2.86,6.395-2.181,17.168-1.636,25.825l0.002,0.014c0.058,0.927,0.12,1.895,0.176,2.839    c-0.42,0.192-1.1,0.395-2.103,0.395c-1.613,0-3.532-0.514-5.701-1.528c-0.638-0.296-1.367-0.446-2.17-0.446    c-1.291,0-2.653,0.379-3.834,1.071c-1.486,0.87-2.446,2.099-2.706,3.462c-0.172,0.902-0.164,2.684,1.822,4.491    c1.092,0.995,2.696,1.912,4.767,2.728c0.543,0.213,1.188,0.417,1.871,0.633c2.37,0.751,5.957,1.886,6.893,4.081    c0.474,1.113,0.27,2.578-0.605,4.348c-0.023,0.048-0.046,0.096-0.067,0.145c-0.219,0.509-2.258,5.115-6.441,9.973    c-2.377,2.762-4.995,5.071-7.778,6.864c-3.396,2.189-7.071,3.619-10.921,4.252C1,93.855-0.08,95.198,0.005,96.725    c0.026,0.44,0.129,0.878,0.309,1.303c0.001,0.003,0.003,0.005,0.004,0.008c0.611,1.426,2.029,2.637,4.333,3.705    c2.816,1.304,7.027,2.401,12.516,3.26c0.277,0.526,0.565,1.848,0.765,2.753c0.209,0.962,0.426,1.951,0.736,3.001    c0.335,1.138,1.203,2.498,3.433,2.498c0.845,0,1.817-0.19,2.943-0.407c1.648-0.322,3.902-0.762,6.716-0.762    c1.56,0,3.176,0.137,4.803,0.406c3.136,0.521,5.84,2.425,8.969,4.631c4.579,3.228,9.762,6.881,17.681,6.881    c0.216,0,0.433-0.007,0.647-0.022c0.262,0.012,0.586,0.022,0.928,0.022c7.921,0,13.103-3.655,17.677-6.879l0.007-0.007    c3.129-2.203,5.83-4.105,8.965-4.625c1.626-0.269,3.243-0.406,4.803-0.406c2.688,0,4.816,0.342,6.716,0.711    c1.24,0.243,2.204,0.361,2.943,0.361l0.072,0.001h0.075c1.631,0,2.83-0.893,3.287-2.455c0.304-1.028,0.521-1.994,0.735-2.972    c0.186-0.848,0.484-2.207,0.762-2.739c5.493-0.86,9.702-1.955,12.519-3.259c2.299-1.063,3.715-2.273,4.33-3.693    c0.184-0.426,0.292-0.867,0.316-1.316c0.087-1.524-0.995-2.87-2.508-3.117c-17.112-2.812-24.821-20.343-25.139-21.088    c-0.021-0.049-0.044-0.098-0.068-0.145c-0.875-1.771-1.077-3.234-0.602-4.349c0.933-2.193,4.518-3.328,6.89-4.079    c0.687-0.216,1.334-0.421,1.873-0.633c2.335-0.919,4.004-1.917,5.105-3.05c1.315-1.35,1.571-2.644,1.555-3.491    c-0.04-2.049-1.611-3.869-4.109-4.761c-0.844-0.348-1.806-0.532-2.786-0.532c-0.667,0-1.655,0.091-2.59,0.527    c-2.002,0.934-3.795,1.445-5.335,1.518c-0.819-0.041-1.393-0.218-1.765-0.387c0.047-0.799,0.099-1.62,0.152-2.476l0.022-0.366    c0.548-8.662,1.23-19.443-1.632-25.843c-1.961-4.383-4.595-8.153-7.83-11.21c-2.713-2.561-5.864-4.638-9.368-6.172    C73.761,4.399,68.076,4,65.231,4"
+                      fill="#fff" fill-rule="evenodd" id="Snapchat" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <svg height=20 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                viewBox="0 0 512 512" width=20 xml:space="preserve">
+                <path
+                  d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"
+                  style="fill-rule:nonzero;" fill="#fff" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <svg height=20 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                viewBox="0 0 512 512" width=20 xml:space="preserve">
+                <path
+                  d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z"
+                  style="fill-rule:nonzero;" fill="#fff" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</body>
+
+</html>
